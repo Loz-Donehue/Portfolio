@@ -19,13 +19,18 @@ header {
   padding: 2%;
 }
 
+header .logo {
+  width: 100px;
+  height: auto;
+}
+
 header .nav-links {
   list-style: none;
 }
 
 header .nav-links li {
   display: inline-block;
-  padding-left: 10px;
+  padding-left: 20px;
 }
 
 header .nav-links li a {
@@ -36,6 +41,14 @@ header .nav-links li a {
 
 content {
   background-color: #0d0d0d;
+}
+
+content heading h1 {
+  color: #8c5656;
+}
+
+content heading h1 h4 {
+  color: #d5d7f2;
 }
 
 content .main-img {

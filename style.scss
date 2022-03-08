@@ -1,7 +1,7 @@
 $primary-text-color: #d5d7f2;
 $secondary-text-color: #8c5656;
-$secondary-background-color: #0d0d0d;
-$primary-background-color: #342e59;
+$primary-background-color: #0d0d0d;
+$secondary-background-color: #342e59;
 
 // General Overrides
 
@@ -9,7 +9,7 @@ $primary-background-color: #342e59;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: $primary-background-color;
+  background-color: $secondary-background-color;
 }
 
 // Navigation Bar
@@ -19,11 +19,16 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 2%;
+
+  .logo {
+    width: 100px;
+    height: auto;
+  }
   .nav-links {
     list-style: none;
     li {
       display: inline-block;
-      padding-left: 10px;
+      padding-left: 20px;
       a {
         color: $primary-text-color;
         text-decoration: none;
@@ -35,7 +40,15 @@ header {
 
 // Main Content
 content {
-  background-color: $secondary-background-color;
+  background-color: $primary-background-color;
+  heading {
+    h1 {
+      color: $secondary-text-color;
+      h4 {
+        color: $primary-text-color;
+      }
+    }
+  }
   .main-img {
     max-width: 50%;
     height: auto;
