@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -39,19 +40,30 @@ header .nav-links li a {
   font-size: 2em;
 }
 
-content {
-  background-color: #0d0d0d;
+div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-content heading h1 {
+div h1 {
   color: #8c5656;
+  font-family: "Rock Salt", cursive;
+  font-size: 3em;
 }
 
-content heading h1 h4 {
+div h4 {
   color: #d5d7f2;
 }
 
-content .main-img {
+.main-img {
   max-width: 50%;
   height: auto;
 }

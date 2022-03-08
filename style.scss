@@ -1,7 +1,13 @@
+// Variables
+
 $primary-text-color: #d5d7f2;
 $secondary-text-color: #8c5656;
 $primary-background-color: #0d0d0d;
 $secondary-background-color: #342e59;
+
+// Imports
+
+@import url("https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap");
 
 // General Overrides
 
@@ -39,18 +45,22 @@ header {
 }
 
 // Main Content
-content {
-  background-color: $primary-background-color;
-  heading {
-    h1 {
-      color: $secondary-text-color;
-      h4 {
-        color: $primary-text-color;
-      }
-    }
+
+div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h1 {
+    color: $secondary-text-color;
+    font-family: "Rock Salt", cursive;
+    font-size: 3em;
   }
-  .main-img {
-    max-width: 50%;
-    height: auto;
+  h4 {
+    color: $primary-text-color;
   }
+}
+
+.main-img {
+  max-width: 50%;
+  height: auto;
 }
