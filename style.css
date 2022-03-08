@@ -1,13 +1,22 @@
-@import url("https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap");
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+body {
   margin: 0;
-  padding: 0;
   background-color: #342e59;
 }
 
-header {
+.container {
+  width: 100vw;
+  height: 100vh;
+  font-weight: bold;
+  font-size: 30px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto 1fr auto;
+      grid-template-rows: auto 1fr auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -17,54 +26,31 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 2%;
+  background-color: #0d0d0d;
 }
 
-header .logo {
+.header .logo {
   width: 100px;
   height: auto;
-}
-
-header .nav-links {
-  list-style: none;
-}
-
-header .nav-links li {
-  display: inline-block;
   padding-left: 20px;
 }
 
-header .nav-links li a {
+.header .nav-links {
+  list-style-type: none;
   color: #d5d7f2;
+  padding-right: 20px;
+}
+
+.header .nav-links li {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.header .nav-links li a {
   text-decoration: none;
-  font-size: 2em;
 }
 
-div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-div h1 {
-  color: #8c5656;
-  font-family: "Rock Salt", cursive;
-  font-size: 3em;
-}
-
-div h4 {
+.header .nav-links li a:visited {
   color: #d5d7f2;
-}
-
-.main-img {
-  max-width: 50%;
-  height: auto;
 }
 /*# sourceMappingURL=style.css.map */
