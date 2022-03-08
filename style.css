@@ -6,7 +6,7 @@
   background-color: #342e59;
 }
 
-nav {
+header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -16,32 +16,30 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 2%;
 }
 
-.nav-links {
-  display: inline-block;
-  font-size: 1.5em;
-  color: #d5d7f2;
-  text-decoration: none;
+header .nav-links {
   list-style: none;
 }
 
-.nav-links:visited {
-  color: #8c5656;
-}
-
-.nav-logo {
+header .nav-links li {
   display: inline-block;
-  width: 50%;
-  height: 50%;
-  cursor: pointer;
+  padding-left: 10px;
 }
 
-.main-img {
-  width: 40%;
-  height: 40%;
-  border-radius: 2%;
-  display: block;
-  margin: auto;
+header .nav-links li a {
+  color: #d5d7f2;
+  text-decoration: none;
+  font-size: 2em;
+}
+
+content {
+  background-color: #0d0d0d;
+}
+
+content .main-img {
+  max-width: 50%;
+  height: auto;
 }
 /*# sourceMappingURL=style.css.map */

@@ -14,37 +14,30 @@ $primary-background-color: #342e59;
 
 // Navigation Bar
 
-nav {
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.nav-links {
-  display: inline-block;
-  font-size: 1.5em;
-  color: $primary-text-color;
-  text-decoration: none;
-  list-style: none;
-}
-
-.nav-links:visited {
-  color: $secondary-text-color;
-}
-
-.nav-logo {
-  display: inline-block;
-  width: 50%;
-  height: 50%;
-  cursor: pointer;
+  padding: 2%;
+  .nav-links {
+    list-style: none;
+    li {
+      display: inline-block;
+      padding-left: 10px;
+      a {
+        color: $primary-text-color;
+        text-decoration: none;
+        font-size: 2em;
+      }
+    }
+  }
 }
 
 // Main Content
-
-.main-img {
-  width: 40%;
-  height: 40%;
-  border-radius: 2%;
-  display: block;
-  margin: auto;
+content {
+  background-color: $secondary-background-color;
+  .main-img {
+    max-width: 50%;
+    height: auto;
+  }
 }
