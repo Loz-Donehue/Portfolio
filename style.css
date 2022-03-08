@@ -1,1 +1,47 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #342e59;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-links {
+  display: inline-block;
+  font-size: 1.5em;
+  color: #d5d7f2;
+  text-decoration: none;
+  list-style: none;
+}
+
+.nav-links:visited {
+  color: #8c5656;
+}
+
+.nav-logo {
+  display: inline-block;
+  width: 50%;
+  height: 50%;
+  cursor: pointer;
+}
+
+.main-img {
+  width: 40%;
+  height: 40%;
+  border-radius: 2%;
+  display: block;
+  margin: auto;
+}
+/*# sourceMappingURL=style.css.map */

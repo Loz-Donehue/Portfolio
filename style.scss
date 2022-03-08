@@ -1,0 +1,50 @@
+$primary-text-color: #d5d7f2;
+$secondary-text-color: #8c5656;
+$secondary-background-color: #0d0d0d;
+$primary-background-color: #342e59;
+
+// General Overrides
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: $primary-background-color;
+}
+
+// Navigation Bar
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  display: inline-block;
+  font-size: 1.5em;
+  color: $primary-text-color;
+  text-decoration: none;
+  list-style: none;
+}
+
+.nav-links:visited {
+  color: $secondary-text-color;
+}
+
+.nav-logo {
+  display: inline-block;
+  width: 50%;
+  height: 50%;
+  cursor: pointer;
+}
+
+// Main Content
+
+.main-img {
+  width: 40%;
+  height: 40%;
+  border-radius: 2%;
+  display: block;
+  margin: auto;
+}
