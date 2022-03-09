@@ -7,64 +7,6 @@ $secondary-background-color: #342e59;
 
 // // Imports
 
-// @import url("https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap");
-
-// // General Overrides
-
-// * {
-//   box-sizing: border-box;
-//   margin: 0;
-//   padding: 0;
-//   background-color: $secondary-background-color;
-// }
-
-// // Navigation Bar
-
-// header {
-//   display: flex;
-//   justify-content: space-between;
-//   align-items: center;
-//   padding: 2%;
-
-//   .logo {
-//     width: 100px;
-//     height: auto;
-//   }
-//   .nav-links {
-//     list-style: none;
-//     li {
-//       display: inline-block;
-//       padding-left: 20px;
-//       a {
-//         color: $primary-text-color;
-//         text-decoration: none;
-//         font-size: 2em;
-//       }
-//     }
-//   }
-// }
-
-// // Main Content
-
-// .home-text {
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   h1 {
-//     color: $secondary-text-color;
-//     font-family: "Rock Salt", cursive;
-//     font-size: 3em;
-//   }
-//   h4 {
-//     color: $primary-text-color;
-//   }
-// }
-
-// .main-img {
-//   max-width: 50%;
-//   height: auto;
-// }
-
 // General Overrides
 
 body {
@@ -106,6 +48,7 @@ body {
       padding: 0 20px;
       a {
         text-decoration: none;
+        color: $secondary-text-color;
       }
       a:visited {
         color: $primary-text-color;
