@@ -66,6 +66,12 @@ a:visited {
   color: #d5d7f2;
 }
 
+.header .nav-links li a:hover {
+  color: #8c5656;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
 .content {
   display: -webkit-box;
   display: -ms-flexbox;
