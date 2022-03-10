@@ -88,4 +88,57 @@ body {
 .footer .footer-text {
   font-size: 15px;
 }
+
+.blog-container {
+  display: -ms-grid;
+  display: grid;
+  gap: 2rem;
+  padding: 3rem 5rem;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: auto (1fr)[3];
+      grid-template-rows: auto repeat(3, 1fr);
+  width: 100vw;
+  height: 100vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.blog-title {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.blog-title h1 {
+  padding-bottom: 2rem;
+  margin: 0;
+}
+
+.blog-post {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #0d0d0d;
+}
+
+.blog-post h2 {
+  font-size: 1.5rem;
+}
 /*# sourceMappingURL=style.css.map */
