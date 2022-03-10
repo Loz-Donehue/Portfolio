@@ -14,12 +14,21 @@ body {
   background-color: $secondary-background-color;
 }
 
+a {
+  color: $primary-text-color;
+}
+
+a:visited {
+  color: $secondary-text-color;
+}
+
 .container {
   width: 100vw;
   height: 100vh;
 
   font-weight: bold;
   font-size: 30px;
+  color: $primary-text-color;
 
   display: grid;
   grid-template-rows: auto 1fr auto;
@@ -73,6 +82,7 @@ body {
   align-items: center;
   .footer-text {
     font-size: 15px;
+    color: $primary-text-color;
   }
 }
 
@@ -111,4 +121,11 @@ body {
   h2 {
     font-size: 1.5rem;
   }
+}
+
+// About
+
+.about-text {
+  display: flex;
+  flex-direction: column;
 }
