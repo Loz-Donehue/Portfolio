@@ -129,6 +129,10 @@ a:visited {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -140,6 +144,10 @@ a:visited {
 .blog-title h1 {
   padding-bottom: 2rem;
   margin: 0;
+}
+
+.blog-title nav ul {
+  list-style-type: none;
 }
 
 .blog-post {
