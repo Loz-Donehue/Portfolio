@@ -150,6 +150,7 @@ div .footer .footer-text {
 
 .blog-title nav {
   background: #0d0d0d;
+  border-radius: 1rem;
 }
 
 .blog-title nav ul.blog-nav {
@@ -180,15 +181,25 @@ div .footer .footer-text {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: #0d0d0d;
   max-width: 100vw;
   padding: 20px;
+  border-radius: 1rem;
 }
 
 .blog-post h2 {
   font-size: 2rem;
   font-weight: bolder;
   text-decoration: underline;
+}
+
+.blog-post h3 {
+  font-size: 1.5rem;
+  font-style: italic;
+  margin-top: 0;
 }
 
 .blog-post p {
