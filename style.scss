@@ -87,6 +87,8 @@ a:visited {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
+  bottom: 0;
   .footer-text {
     font-size: 15px;
     color: $primary-text-color;
@@ -115,16 +117,25 @@ a:visited {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
   h1 {
     padding-bottom: 2rem;
     margin: 0;
   }
   nav {
+    background: $primary-background-color;
+
+    flex-flow: column wrap;
     ul {
       list-style-type: none;
+      margin: 0;
+      padding: 20px;
       li {
         a {
         }
+      }
+      li:not(:last-child) {
+        margin-bottom: 2rem;
       }
     }
   }
@@ -132,11 +143,12 @@ a:visited {
 
 .blog-post {
   display: flex;
-  flex-direction: column;
+  flex-direction: column wrap;
   justify-content: space-between;
   background: $primary-background-color;
+  padding: 20px;
   h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 }
 
