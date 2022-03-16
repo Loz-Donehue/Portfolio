@@ -113,6 +113,28 @@ main .container {
   max-width: 500px;
 }
 
+main .container h2 {
+  padding: 2rem;
+}
+
+.skills-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 3rem;
+}
+
+.skills-container .skills img {
+  width: 5rem;
+}
+
 footer {
   background: grey;
   color: white;
