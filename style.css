@@ -33,6 +33,9 @@ ul {
   background: black;
   color: white;
   padding: 1em;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 .navbar .container {
