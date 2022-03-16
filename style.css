@@ -110,7 +110,27 @@ main .container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 500px;
+  max-width: 1100px;
+}
+
+main .container .about-blurb-photo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 3rem;
+}
+
+main .container .about-blurb-photo img {
+  max-width: 50%;
+  height: auto;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  border-radius: 2%;
 }
 
 main .container h2 {
@@ -132,7 +152,7 @@ main .container h2 {
 }
 
 .skills-container .skills img {
-  width: 5rem;
+  width: 4rem;
 }
 
 footer {
