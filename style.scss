@@ -130,6 +130,7 @@ main {
       article.blog {
         // Could not make flex basis of 50% as the grid gap of 1rem is preventing the blog and image from being side by side
         flex: 2 1 53%;
+
         h1 {
           margin-bottom: 10px;
         }
@@ -142,13 +143,21 @@ main {
 
       figure.blog-photo {
         flex: 2 1 45%;
+
         img {
           max-width: 100%;
           height: auto;
+          border-radius: 1rem;
         }
       }
     }
   }
+}
+
+// Switching orders of image and text for every second container block
+
+.blog-container:nth-child(1) {
+  order: 3;
 }
 
 .skills-container {
