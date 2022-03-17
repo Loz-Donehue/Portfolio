@@ -150,29 +150,34 @@ main .container section.blog-container {
       -ms-flex-align: center;
           align-items: center;
   gap: 1rem;
-  padding: 2rem;
+  padding: 1rem;
   background-color: gold;
 }
 
 main .container section.blog-container article.blog {
-  -ms-flex-preferred-size: 49%;
-      flex-basis: 49%;
   -webkit-box-flex: 2;
-      -ms-flex-positive: 2;
-          flex-grow: 2;
+      -ms-flex: 2 1 53%;
+          flex: 2 1 53%;
+}
+
+main .container section.blog-container article.blog h1 {
+  margin-bottom: 10px;
+}
+
+main .container section.blog-container article.blog time p {
+  margin-bottom: 10px;
+  font-style: italic;
 }
 
 main .container section.blog-container figure.blog-photo {
-  -ms-flex-preferred-size: 49%;
-      flex-basis: 49%;
+  -webkit-box-flex: 2;
+      -ms-flex: 2 1 45%;
+          flex: 2 1 45%;
 }
 
 main .container section.blog-container figure.blog-photo img {
   max-width: 100%;
   height: auto;
-  -webkit-box-flex: 3;
-      -ms-flex-positive: 3;
-          flex-grow: 3;
 }
 
 .skills-container {
