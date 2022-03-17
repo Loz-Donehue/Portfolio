@@ -137,6 +137,44 @@ main .container h2 {
   padding: 2rem;
 }
 
+main .container section.blog-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+  background-color: gold;
+}
+
+main .container section.blog-container article.blog {
+  -ms-flex-preferred-size: 49%;
+      flex-basis: 49%;
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+}
+
+main .container section.blog-container figure.blog-photo {
+  -ms-flex-preferred-size: 49%;
+      flex-basis: 49%;
+}
+
+main .container section.blog-container figure.blog-photo img {
+  max-width: 100%;
+  height: auto;
+  -webkit-box-flex: 3;
+      -ms-flex-positive: 3;
+          flex-grow: 3;
+}
+
 .skills-container {
   display: -webkit-box;
   display: -ms-flexbox;
