@@ -152,15 +152,20 @@ main .container section.blog-container article.blog {
   -webkit-box-flex: 2;
       -ms-flex: 2 1 53%;
           flex: 2 1 53%;
+  background: aquamarine;
 }
 
 main .container section.blog-container article.blog h1 {
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
 }
 
 main .container section.blog-container article.blog time p {
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
   font-style: italic;
+}
+
+main .container section.blog-container article.blog p {
+  margin-bottom: 1rem;
 }
 
 main .container section.blog-container figure.blog-photo {
