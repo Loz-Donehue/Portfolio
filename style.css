@@ -220,23 +220,23 @@ main .container section.blog-container {
   background-color: gold;
 }
 
-main .container section.blog-container article.blog {
+main .container section.blog-container article.blog-text {
   -webkit-box-flex: 2;
       -ms-flex: 2 1 53%;
           flex: 2 1 53%;
   background: aquamarine;
 }
 
-main .container section.blog-container article.blog h1 {
+main .container section.blog-container article.blog-text h1 {
   margin-bottom: 1rem;
 }
 
-main .container section.blog-container article.blog time p {
+main .container section.blog-container article.blog-text time p {
   margin-bottom: 1rem;
   font-style: italic;
 }
 
-main .container section.blog-container article.blog p {
+main .container section.blog-container article.blog-text p {
   margin-bottom: 1rem;
 }
 
@@ -383,6 +383,44 @@ main .container .contact-container .socials {
 
 main .container .contact-container .socials img {
   width: 50px;
+}
+
+main .container section.project-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2em;
+  padding: 1em;
+}
+
+main .container section.project-cards .card {
+  background-color: bisque;
+  width: 15em;
+  height: 20em;
+  padding: 1em;
+  border-radius: 1.5em;
+}
+
+main .container section.project-cards .card figure.project-img {
+  background-color: aqua;
+  height: 10em;
+  margin-bottom: 1rem;
+  background-size: cover;
+}
+
+main .container section.project-cards .card figure.project-img .project1 {
+  background-image: url("/images/terminal.jpg");
+}
+
+main .container section.project-cards .card figure.project-img .project2 {
+  background-image: url("/images/bitcoin.jpg");
 }
 
 footer {

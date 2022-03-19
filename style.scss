@@ -26,6 +26,39 @@
   }
 }
 
+@mixin container() {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  gap: 1rem;
+  padding: 1rem;
+
+  background-color: gold;
+}
+
+@mixin side-text() {
+  flex: 2 1 53%;
+
+  background: aquamarine;
+}
+
+@mixin side-img() {
+  flex: 2 1 45%;
+
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 1rem;
+  }
+}
+
+@mixin flex-col() {
+  display: flex;
+  flex-direction: column;
+}
+
 // General Overrides
 
 * {
@@ -186,11 +219,9 @@ main {
       padding: 1rem;
 
       background-color: gold;
-      article.blog {
+      article.blog-text {
         // Could not make flex basis of 50% as the grid gap of 1rem is preventing the blog and image from being side by side
-        flex: 2 1 53%;
-
-        background: aquamarine;
+        @include side-text();
 
         h1 {
           margin-bottom: 1rem;
@@ -207,13 +238,7 @@ main {
       }
 
       figure.blog-photo {
-        flex: 2 1 45%;
-
-        img {
-          max-width: 100%;
-          height: auto;
-          border-radius: 1rem;
-        }
+        @include side-img();
       }
     }
 
@@ -305,6 +330,38 @@ main {
 
         img {
           width: 50px;
+        }
+      }
+    }
+
+    // Projects
+
+    section.project-cards {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      gap: 2em;
+      padding: 1em;
+
+      .card {
+        background-color: bisque;
+        width: 15em;
+        height: 20em;
+        padding: 1em;
+        border-radius: 1.5em;
+
+        figure.project-img {
+          background-color: aqua;
+          height: 10em;
+          margin-bottom: 1rem;
+          background-size: cover;
+
+          .project1 {
+            background-image: url("/images/terminal.jpg");
+          }
+          .project2 {
+            background-image: url("/images/bitcoin.jpg");
+          }
         }
       }
     }
