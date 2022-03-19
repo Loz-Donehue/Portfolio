@@ -126,6 +126,18 @@ main {
 
       // added padding so that text didn't go edge to edge on smaller screen sizes
       padding: 1rem;
+
+      article.about-text {
+        display: flex;
+        flex-direction: column;
+        p {
+          margin-bottom: 1rem;
+        }
+
+        ul li {
+          margin-bottom: 1rem;
+        }
+      }
     }
 
     h2 {

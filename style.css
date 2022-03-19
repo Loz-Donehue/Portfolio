@@ -131,6 +131,24 @@ main .container article.about {
   padding: 1rem;
 }
 
+main .container article.about article.about-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .container article.about article.about-text p {
+  margin-bottom: 1rem;
+}
+
+main .container article.about article.about-text ul li {
+  margin-bottom: 1rem;
+}
+
 main .container h2 {
   padding: 2rem;
 }
