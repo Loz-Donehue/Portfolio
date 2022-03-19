@@ -289,6 +289,24 @@ main .container article.blogpost-container aside {
   max-width: 90%;
 }
 
+main .container article.blogpost-container a {
+  background-color: aqua;
+  color: black;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.2);
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+  max-width: 20em;
+}
+
+main .container article.blogpost-container a:hover {
+  background-color: royalblue;
+}
+
 main .container .contact-container {
   display: -webkit-box;
   display: -ms-flexbox;

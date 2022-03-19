@@ -250,6 +250,9 @@ main {
 
         max-width: 90%;
       }
+      a {
+        @include button();
+      }
     }
 
     // Contact
