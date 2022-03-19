@@ -235,6 +235,9 @@ main {
         p {
           margin-bottom: 1rem;
         }
+        a {
+          font-weight: bold;
+        }
       }
 
       figure.blog-photo {
@@ -346,22 +349,31 @@ main {
       .card {
         background-color: bisque;
         width: 15em;
-        height: 20em;
+        height: 30em;
         padding: 1em;
         border-radius: 1.5em;
 
-        figure.project-img {
-          background-color: aqua;
-          height: 10em;
+        .project-img {
           margin-bottom: 1rem;
-          background-size: cover;
+          border-radius: 1.5em;
+          min-height: 12em;
+          width: auto;
 
-          .project1 {
-            background-image: url("/images/terminal.jpg");
-          }
-          .project2 {
-            background-image: url("/images/bitcoin.jpg");
-          }
+          background-color: aqua;
+        }
+
+        h1 {
+          margin-bottom: 1rem;
+        }
+
+        p {
+          margin-bottom: 1rem;
+        }
+
+        a {
+          margin-bottom: 1rem;
+          @include button();
+          padding: 0.5rem;
         }
       }
     }
