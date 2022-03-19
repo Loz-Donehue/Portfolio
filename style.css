@@ -18,6 +18,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   min-height: 100vh;
+  background-color: blueviolet;
 }
 
 .container {
@@ -100,10 +101,6 @@ header .container h1 {
   text-align: center;
 }
 
-main {
-  background-color: blueviolet;
-}
-
 main .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -140,6 +137,11 @@ main .container article.about article.about-text {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background-color: bisque;
+  padding: 1rem;
+  border-radius: 1.5em;
+  -webkit-box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.2);
 }
 
 main .container article.about article.about-text p {
@@ -152,6 +154,7 @@ main .container article.about article.about-text ul li {
 
 main .container h2 {
   padding: 2rem;
+  font-family: "Bungee", cursive;
 }
 
 main .container .skills-container {
@@ -166,6 +169,11 @@ main .container .skills-container {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 3rem;
+  background-color: bisque;
+  padding: 1rem;
+  border-radius: 1.5em;
+  -webkit-box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.2);
   max-width: 50%;
 }
 
@@ -182,7 +190,7 @@ main .container .download-btn {
   border-radius: 5px;
   -webkit-box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.2);
-  padding: 1rem 2rem;
+  padding: 1rem;
   margin-top: 1rem;
   max-width: 20em;
   display: -webkit-box;
@@ -193,6 +201,8 @@ main .container .download-btn {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 
 main .container .download-btn:hover {
@@ -321,7 +331,7 @@ main .container article.blogpost-container a {
   border-radius: 5px;
   -webkit-box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.2);
-  padding: 1rem 2rem;
+  padding: 1rem;
   margin-top: 1rem;
   max-width: 20em;
 }
@@ -341,7 +351,11 @@ main .container .contact-container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: goldenrod;
+  background-color: bisque;
+  padding: 1rem;
+  border-radius: 1.5em;
+  -webkit-box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.2);
 }
 
 main .container .contact-container .contact-subheading {
@@ -355,13 +369,13 @@ main .container .contact-container .contact-subheading {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  background-color: palevioletred;
   padding: 0;
   width: 100%;
 }
 
 main .container .contact-container .contact-subheading h2 {
   font-size: 1.2em;
+  font-family: "Inconsolata", monospace;
 }
 
 main .container .contact-container .contact-subheading img {
@@ -372,6 +386,24 @@ main .container .contact-container .contact-subheading img {
       align-self: center;
 }
 
+main .container .contact-container a {
+  background-color: aqua;
+  color: black;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  margin-top: 1rem;
+  max-width: 20em;
+}
+
+main .container .contact-container a:hover {
+  background-color: royalblue;
+}
+
 main .container .contact-container .socials {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -380,10 +412,10 @@ main .container .contact-container .socials {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  background-color: #08f5f5;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
 }
 
 main .container .contact-container .socials img {
@@ -411,6 +443,8 @@ main .container section.project-cards .card {
   height: 30em;
   padding: 1em;
   border-radius: 1.5em;
+  -webkit-box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.2);
 }
 
 main .container section.project-cards .card .project-img {
@@ -447,7 +481,7 @@ main .container section.project-cards .card a {
   border-radius: 5px;
   -webkit-box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.2);
-  padding: 1rem 2rem;
+  padding: 1rem;
   margin-top: 1rem;
   max-width: 20em;
   padding: 0.5rem;

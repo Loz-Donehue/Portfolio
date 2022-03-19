@@ -17,7 +17,7 @@
   border-radius: 5px;
   box-shadow: 0 0.25em 0.5em 0 rgba($color: #000000, $alpha: 0.2);
 
-  padding: 1rem 2rem;
+  padding: 1rem;
   margin-top: 1rem;
   max-width: 20em;
 
@@ -59,6 +59,13 @@
   flex-direction: column;
 }
 
+@mixin card-bg() {
+  background-color: bisque;
+  padding: 1rem;
+  border-radius: 1.5em;
+  box-shadow: 0 0.25em 0.5em 0 rgba($color: #000000, $alpha: 0.2);
+}
+
 // General Overrides
 
 * {
@@ -76,6 +83,7 @@ body {
   flex-direction: column;
 
   min-height: 100vh;
+  background-color: blueviolet;
 }
 
 .container {
@@ -144,7 +152,6 @@ header {
 // Main
 
 main {
-  background-color: blueviolet;
   .container {
     display: flex;
     flex-direction: column;
@@ -164,6 +171,8 @@ main {
       article.about-text {
         display: flex;
         flex-direction: column;
+        @include card-bg();
+
         p {
           margin-bottom: 1rem;
         }
@@ -176,6 +185,7 @@ main {
 
     h2 {
       padding: 2rem;
+      font-family: "Bungee", cursive;
     }
 
     // Skills I will learn section of About page
@@ -185,6 +195,8 @@ main {
       flex-flow: row wrap;
       justify-content: center;
       gap: 3rem;
+
+      @include card-bg();
 
       max-width: 50%;
       .skills {
@@ -202,6 +214,8 @@ main {
       display: flex;
       align-items: center;
       justify-content: space-around;
+
+      align-self: center;
 
       img {
         max-width: 5%;
@@ -303,20 +317,20 @@ main {
       flex-direction: column;
       align-items: center;
 
-      background-color: goldenrod;
+      @include card-bg();
 
       .contact-subheading {
         display: flex;
         flex-flow: row wrap;
         justify-content: flex-start;
 
-        background-color: palevioletred;
         padding: 0;
 
         width: 100%;
 
         h2 {
           font-size: 1.2em;
+          font-family: "Inconsolata", monospace;
         }
         img {
           width: 60px;
@@ -325,12 +339,15 @@ main {
         }
       }
 
+      a {
+        @include button();
+      }
+
       .socials {
         display: flex;
         flex-flow: row wrap;
-        justify-content: space-between;
-
-        background-color: rgb(8, 245, 245);
+        justify-content: space-evenly;
+        width: 100%;
 
         img {
           width: 50px;
@@ -353,6 +370,7 @@ main {
         height: 30em;
         padding: 1em;
         border-radius: 1.5em;
+        box-shadow: 0 0.25em 0.5em 0 rgba($color: #000000, $alpha: 0.2);
 
         .project-img {
           margin-bottom: 1rem;
