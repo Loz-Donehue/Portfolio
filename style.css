@@ -147,6 +147,7 @@ main .container .skills-container {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 3rem;
+  max-width: 50%;
 }
 
 main .container .skills-container .skills img {
@@ -177,6 +178,7 @@ main .container .download-btn {
 
 main .container .download-btn img {
   max-width: 5%;
+  height: auto;
 }
 
 main .container .download-btn:hover {
