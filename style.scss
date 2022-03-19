@@ -2,7 +2,7 @@
 
 @import "variables";
 
-@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee&family=Inconsolata:wght@400;500;600;700;800;900&display=swap");
 
 // Mixins
 
@@ -68,7 +68,7 @@
 }
 
 body {
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Inconsolata", monospace;
   font-size: 16px;
   line-height: 1.5;
 
@@ -130,6 +130,7 @@ header {
   font-weight: bold;
   padding: 3em 0;
   background-color: lightgreen;
+  font-family: "Bungee", cursive;
   .container {
     display: flex;
     flex-direction: column;
@@ -360,6 +361,14 @@ main {
           width: auto;
 
           background-color: aqua;
+
+          .img1 {
+            background: center/cover url("/images/terminal.jpg");
+          }
+
+          .img2 {
+            background: center/cover url("/images/bitcoin.jpg");
+          }
         }
 
         h1 {
@@ -383,13 +392,24 @@ main {
 // Footer
 
 footer {
-  background: grey;
+  background: black;
   color: white;
 
   margin-top: auto;
   .container {
     display: flex;
-    flex-flow: column wrap;
-    align-items: center;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+    padding: 1rem;
+    a {
+      color: white;
+    }
+    a:hover {
+      color: blueviolet;
+    }
+    a:visited {
+      color: grey;
+    }
   }
 }
