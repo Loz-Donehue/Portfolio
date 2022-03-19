@@ -240,6 +240,7 @@ main .container article.blogpost-container figure.blogpost-photo {
 main .container article.blogpost-container figure.blogpost-photo img {
   max-width: 50%;
   height: auto;
+  border-radius: 0.5em;
 }
 
 main .container article.blogpost-container p {
@@ -250,9 +251,10 @@ main .container article.blogpost-container p {
 
 main .container article.blogpost-container aside {
   margin-bottom: 1.5rem;
-  font-size: 3em;
+  font-size: 2.5em;
   font-weight: bold;
-  text-align: justify;
+  text-align: center;
+  max-width: 90%;
 }
 
 footer {
