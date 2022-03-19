@@ -4,6 +4,28 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600;700;800;900&display=swap");
 
+// Mixins
+
+@mixin button() {
+  background-color: aqua;
+  color: black;
+
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+
+  border-radius: 5px;
+  box-shadow: 0 0.25em 0.5em 0 rgba($color: #000000, $alpha: 0.2);
+
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+  max-width: 20em;
+
+  &:hover {
+    background-color: royalblue;
+  }
+}
+
 // General Overrides
 
 * {
@@ -129,19 +151,7 @@ main {
     // Download Resume Button
 
     .download-btn {
-      background-color: aqua;
-      color: black;
-
-      font-size: 1.1rem;
-      font-weight: 600;
-      text-decoration: none;
-
-      border-radius: 5px;
-      box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2);
-
-      padding: 1rem 2rem;
-      margin-top: 1rem;
-      max-width: 20em;
+      @include button();
 
       display: flex;
       align-items: center;
@@ -151,10 +161,6 @@ main {
         max-width: 5%;
         height: auto;
       }
-    }
-
-    .download-btn:hover {
-      background-color: royalblue;
     }
 
     // Blog
@@ -243,6 +249,48 @@ main {
         text-align: center;
 
         max-width: 90%;
+      }
+    }
+
+    // Contact
+
+    .contact-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      background-color: goldenrod;
+
+      .contact-subheading {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+
+        background-color: palevioletred;
+        padding: 0;
+
+        width: 100%;
+
+        h2 {
+          font-size: 1.2em;
+        }
+        img {
+          width: 60px;
+          height: auto;
+          align-self: center;
+        }
+      }
+
+      .socials {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+
+        background-color: rgb(8, 245, 245);
+
+        img {
+          width: 50px;
+        }
       }
     }
   }
