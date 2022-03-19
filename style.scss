@@ -79,6 +79,9 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    h1 {
+      text-align: center;
+    }
   }
 }
 
@@ -145,6 +148,7 @@ main {
           margin-bottom: 1rem;
           font-style: italic;
         }
+
         p {
           margin-bottom: 1rem;
         }
@@ -167,18 +171,25 @@ main {
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
+
+      background-color: goldenrod;
+      padding: 1rem;
 
       time p.time-subheading {
-        font-size: larger;
+        font-size: 1.2em;
         margin-bottom: 1rem;
+        text-align: center;
       }
 
       figure.blogpost-photo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
         margin-bottom: 1rem;
 
         img {
-          max-width: 70%;
+          max-width: 50%;
           height: auto;
         }
       }
@@ -186,11 +197,14 @@ main {
       p {
         margin-bottom: 1.5rem;
         font-size: 1.2em;
-      }
 
+        text-align: justify;
+      }
       aside {
         margin-bottom: 1.5rem;
         font-size: 3em;
+        font-weight: bold;
+        text-align: justify;
       }
     }
   }
