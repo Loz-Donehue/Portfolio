@@ -40,8 +40,6 @@
 
 @mixin side-text() {
   flex: 2 1 53%;
-
-  background: aquamarine;
 }
 
 @mixin side-img() {
@@ -233,10 +231,10 @@ main {
       gap: 1rem;
       padding: 1rem;
 
-      background-color: gold;
       article.blog-text {
         // Could not make flex basis of 50% as the grid gap of 1rem is preventing the blog and image from being side by side
         @include side-text();
+        @include card-bg();
 
         h1 {
           margin-bottom: 1rem;
@@ -252,6 +250,8 @@ main {
         }
         a {
           font-weight: bold;
+          @include button();
+          padding: 0.5rem;
         }
       }
 
@@ -316,6 +316,7 @@ main {
       display: flex;
       flex-direction: column;
       align-items: center;
+      margin-top: 1rem;
 
       @include card-bg();
 

@@ -228,14 +228,17 @@ main .container section.blog-container {
           align-items: center;
   gap: 1rem;
   padding: 1rem;
-  background-color: gold;
 }
 
 main .container section.blog-container article.blog-text {
   -webkit-box-flex: 2;
       -ms-flex: 2 1 53%;
           flex: 2 1 53%;
-  background: aquamarine;
+  background-color: bisque;
+  padding: 1rem;
+  border-radius: 1.5em;
+  -webkit-box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.2);
 }
 
 main .container section.blog-container article.blog-text h1 {
@@ -253,6 +256,22 @@ main .container section.blog-container article.blog-text p {
 
 main .container section.blog-container article.blog-text a {
   font-weight: bold;
+  background-color: aqua;
+  color: black;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  margin-top: 1rem;
+  max-width: 20em;
+  padding: 0.5rem;
+}
+
+main .container section.blog-container article.blog-text a:hover {
+  background-color: royalblue;
 }
 
 main .container section.blog-container figure.blog-photo {
@@ -351,6 +370,7 @@ main .container .contact-container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 1rem;
   background-color: bisque;
   padding: 1rem;
   border-radius: 1.5em;
