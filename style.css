@@ -220,42 +220,57 @@ main .container section.blog-container {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
   gap: 1rem;
   padding: 1rem;
 }
 
-main .container section.blog-container article.blog-text {
-  -webkit-box-flex: 2;
-      -ms-flex: 2 1 53%;
-          flex: 2 1 53%;
+main .container section.blog-container article.blog-card {
   background-color: bisque;
   padding: 1rem;
   border-radius: 1.5em;
   -webkit-box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
 }
 
-main .container section.blog-container article.blog-text h1 {
+main .container section.blog-container article.blog-card .text-col {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 60%;
+          flex: 1 1 60%;
+}
+
+main .container section.blog-container article.blog-card .text-col h1 {
   margin-bottom: 1rem;
+  font-size: 1.5em;
 }
 
-main .container section.blog-container article.blog-text time p {
+main .container section.blog-container article.blog-card .text-col time p {
   margin-bottom: 1rem;
   font-style: italic;
 }
 
-main .container section.blog-container article.blog-text p {
+main .container section.blog-container article.blog-card .text-col p {
   margin-bottom: 1rem;
 }
 
-main .container section.blog-container article.blog-text a {
-  font-weight: bold;
+main .container section.blog-container article.blog-card .text-col a {
   background-color: aqua;
   color: black;
   font-size: 1.1rem;
@@ -268,22 +283,34 @@ main .container section.blog-container article.blog-text a {
   margin-top: 1rem;
   max-width: 20em;
   padding: 0.5rem;
+  font-weight: bold;
 }
 
-main .container section.blog-container article.blog-text a:hover {
+main .container section.blog-container article.blog-card .text-col a:hover {
   background-color: royalblue;
 }
 
-main .container section.blog-container figure.blog-photo {
+main .container section.blog-container article.blog-card .img-col {
   -webkit-box-flex: 2;
-      -ms-flex: 2 1 45%;
-          flex: 2 1 45%;
+      -ms-flex: 2 1 30%;
+          flex: 2 1 30%;
+  -ms-flex-item-align: center;
+      align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-main .container section.blog-container figure.blog-photo img {
+main .container section.blog-container article.blog-card .img-col img {
   max-width: 100%;
-  height: auto;
-  border-radius: 1rem;
+  max-height: 20em;
+  border-radius: 1.5rem;
 }
 
 main .container article.blogpost-container {
@@ -297,8 +324,12 @@ main .container article.blogpost-container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: goldenrod;
+  margin: 1rem;
+  background-color: bisque;
   padding: 1rem;
+  border-radius: 1.5em;
+  -webkit-box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.2);
 }
 
 main .container article.blogpost-container time p.time-subheading {
@@ -334,6 +365,12 @@ main .container article.blogpost-container p {
 }
 
 main .container article.blogpost-container aside {
+  background-color: bisque;
+  padding: 1rem;
+  border-radius: 1.5em;
+  -webkit-box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.2);
+  background-color: aquamarine;
   margin-bottom: 1.5rem;
   font-size: 2.5em;
   font-weight: bold;
