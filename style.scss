@@ -152,7 +152,7 @@ ul {
 header {
   font-weight: bold;
   padding: 3em 0;
-  background-color: lightgreen;
+  background-color: rgb(44, 5, 80);
   font-family: "Bungee", cursive;
   .container {
     display: flex;
@@ -160,6 +160,7 @@ header {
     align-items: center;
     h1 {
       text-align: center;
+      color: white;
     }
   }
 }

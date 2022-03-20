@@ -92,7 +92,7 @@ ul {
 header {
   font-weight: bold;
   padding: 3em 0;
-  background-color: lightgreen;
+  background-color: #2c0550;
   font-family: "Bungee", cursive;
 }
 
@@ -111,6 +111,7 @@ header .container {
 
 header .container h1 {
   text-align: center;
+  color: white;
 }
 
 main .container {
