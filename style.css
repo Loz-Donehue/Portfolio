@@ -119,6 +119,9 @@ header .container h1 {
   text-align: center;
   color: white;
   font-size: 3rem;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke: 2px black;
 }
 
 header .container p {
@@ -178,8 +181,14 @@ main .container article.about article.about-text ul li {
   margin-bottom: 1rem;
 }
 
-main .container h2 {
+main .container h2.about-subheading {
   padding: 2rem;
+  font-size: 2em;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(70, 5, 114, 0.815)), to(magenta));
+  background: linear-gradient(to bottom, rgba(70, 5, 114, 0.815), magenta);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 2px black;
   font-family: "Bungee", cursive;
 }
 
@@ -464,6 +473,7 @@ main .container .contact-container .contact-subheading {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  gap: 1em;
   padding: 0;
   width: 100%;
 }
@@ -471,6 +481,10 @@ main .container .contact-container .contact-subheading {
 main .container .contact-container .contact-subheading h2 {
   font-size: 1.2em;
   font-family: "Inconsolata", monospace;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 1em;
 }
 
 main .container .contact-container .contact-subheading img {
@@ -493,6 +507,7 @@ main .container .contact-container a {
   padding: 1rem;
   margin-top: 1rem;
   max-width: 20em;
+  margin: 1em 0;
 }
 
 main .container .contact-container a:hover {

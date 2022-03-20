@@ -154,6 +154,9 @@ header {
       text-align: center;
       color: white;
       font-size: 3rem;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: white;
+      -webkit-text-stroke: 2px black;
     }
     p {
       color: white;
@@ -197,8 +200,18 @@ main {
       }
     }
 
-    h2 {
+    h2.about-subheading {
       padding: 2rem;
+      font-size: 2em;
+      background: linear-gradient(
+        to bottom,
+        rgba(70, 5, 114, 0.815),
+        rgb(255, 0, 255)
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke: 2px black;
+
       font-family: "Bungee", cursive;
     }
 
@@ -374,6 +387,8 @@ main {
         flex-flow: row wrap;
         justify-content: flex-start;
 
+        gap: 1em;
+
         padding: 0;
 
         width: 100%;
@@ -381,6 +396,8 @@ main {
         h2 {
           font-size: 1.2em;
           font-family: "Inconsolata", monospace;
+          align-self: center;
+          padding: 1em;
         }
         img {
           width: 60px;
@@ -391,6 +408,7 @@ main {
 
       a {
         @include button();
+        margin: 1em 0;
       }
 
       .socials {
