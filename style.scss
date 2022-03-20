@@ -58,11 +58,9 @@
 
   gap: 1rem;
   padding: 1rem;
-
-  background-color: gold;
 }
 
-img {
+@mixin img() {
   max-width: 100%;
   height: auto;
   border-radius: 1rem;
@@ -70,7 +68,12 @@ img {
 
 @mixin flex-col() {
   display: flex;
-  flex-direction: column;
+  flex-flow: column wrap;
+}
+
+@mixin flex-row() {
+  display: flex;
+  flex-flow: row wrap;
 }
 
 @mixin card-bg() {
@@ -79,6 +82,18 @@ img {
   border: 1px solid black;
   border-radius: 1.5em;
   box-shadow: 0 0.25em 0.5em 0 rgba($color: #000000, $alpha: 0.2);
+}
+
+@mixin subheading {
+  padding: 2rem;
+  font-size: 2.2em;
+  font-family: "Bungee", cursive;
+
+  background-color: rgb(44, 5, 80);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px black;
 }
 
 // General Overrides
@@ -178,6 +193,37 @@ main {
 
     align-items: center;
     max-width: 1100px;
+
+    // Home
+
+    .home-container {
+      @include flex-row();
+      justify-content: center;
+      align-items: center;
+
+      max-width: 800px;
+      min-height: 50vh;
+
+      .home-text {
+        @include container();
+        flex: 1 1 48%;
+
+        padding: 1rem;
+
+        .home-subheading {
+          @include subheading();
+          padding: 0;
+        }
+      }
+      .home-img {
+        @include container();
+
+        flex: 1 1 50%;
+        img {
+          @include img();
+        }
+      }
+    }
 
     // About
     article.about {
