@@ -301,8 +301,6 @@ main .container .download-btn {
   padding: 0.5rem;
   margin-top: 1rem;
   max-width: 20em;
-  -webkit-transition: ease-in-out 0.3s;
-  transition: ease-in-out 0.3s;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -408,8 +406,6 @@ main .container section.blog-container article.blog-card .text-col a {
   padding: 0.5rem;
   margin-top: 1rem;
   max-width: 20em;
-  -webkit-transition: ease-in-out 0.3s;
-  transition: ease-in-out 0.3s;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -536,8 +532,6 @@ main .container article.blogpost-container a {
   padding: 0.5rem;
   margin-top: 1rem;
   max-width: 20em;
-  -webkit-transition: ease-in-out 0.3s;
-  transition: ease-in-out 0.3s;
 }
 
 main .container article.blogpost-container a:hover {
@@ -607,8 +601,6 @@ main .container .contact-container a {
   padding: 0.5rem;
   margin-top: 1rem;
   max-width: 20em;
-  -webkit-transition: ease-in-out 0.3s;
-  transition: ease-in-out 0.3s;
   margin: 1em 0;
 }
 
@@ -697,8 +689,6 @@ main .container section.project-cards .card a {
   padding: 0.5rem;
   margin-top: 1rem;
   max-width: 20em;
-  -webkit-transition: ease-in-out 0.3s;
-  transition: ease-in-out 0.3s;
 }
 
 main .container section.project-cards .card a:hover {
