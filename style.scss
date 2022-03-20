@@ -34,16 +34,18 @@
   color: black;
 
   font-size: 1.1rem;
-  font-weight: 600;
+  font-weight: bold;
   text-decoration: none;
 
   border: 1px solid black;
   border-radius: 5px;
   box-shadow: 0 0.25em 0.5em 0 rgba($color: #000000, $alpha: 0.2);
 
-  padding: 1rem;
+  padding: 0.5rem;
   margin-top: 1rem;
   max-width: 20em;
+
+  transition: ease-in-out 0.3s;
 
   &:hover {
     background-color: royalblue;
@@ -63,7 +65,8 @@
 @mixin img() {
   max-width: 100%;
   height: auto;
-  border-radius: 1rem;
+  border-radius: 1.5rem;
+  border: 1px solid black;
 }
 
 @mixin flex-col() {
@@ -221,22 +224,21 @@ main {
         flex: 1 1 50%;
         img {
           @include img();
+          border: none;
         }
       }
     }
 
     // About
     article.about {
-      display: flex;
-      flex-direction: column;
+      @include flex-col();
       align-items: center;
 
       // added padding so that text didn't go edge to edge on smaller screen sizes
       padding: 1rem;
 
       article.about-text {
-        display: flex;
-        flex-direction: column;
+        @include flex-col();
         @include card-bg();
 
         p {
@@ -250,22 +252,13 @@ main {
     }
 
     h2.about-subheading {
-      padding: 2rem;
-      font-size: 2.2em;
-      background-color: rgb(44, 5, 80);
-      -webkit-background-clip: text;
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
-      -webkit-text-stroke: 1px black;
-
-      font-family: "Bungee", cursive;
+      @include subheading();
     }
 
     // Skills I will learn section of About page
 
     .skills-container {
-      display: flex;
-      flex-flow: row wrap;
+      @include flex-row();
       justify-content: center;
       gap: 3rem;
 
@@ -284,12 +277,11 @@ main {
     .download-btn {
       @include button();
 
-      display: flex;
-      align-items: center;
-      justify-content: space-evenly;
+      @include container();
 
       align-self: center;
       padding: 0.5em;
+
       img {
         max-width: 8%;
         height: auto;
@@ -298,35 +290,17 @@ main {
 
     // Blog
     section.blog-container {
-      display: flex;
-      flex-wrap: wrap;
-
-      align-items: center;
-
-      width: 100%;
-
-      gap: 1rem;
-      padding: 1rem;
+      @include container();
 
       article.blog-card {
         @include card-bg();
 
-        display: flex;
-        flex-wrap: wrap;
-
-        align-self: center;
-        justify-content: center;
-
-        gap: 1rem;
-        padding: 1rem;
+        @include container();
 
         .text-col {
           flex: 1 1 65%;
 
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: flex-start;
+          @include flex-col();
 
           h1 {
             margin-bottom: 1rem;
@@ -343,23 +317,21 @@ main {
           }
           a {
             @include button();
-            padding: 0.5rem;
-            font-weight: bold;
+
             align-self: center;
           }
         }
         .img-col {
           flex: 1 1 33%;
 
-          display: flex;
-          align-items: center;
-          justify-content: center;
+          @include container();
+          gap: 0;
+          padding: 0;
 
           img {
-            max-width: 100%;
-            max-height: 20em;
+            @include img();
 
-            border-radius: 1.5rem;
+            max-height: 20em;
           }
         }
       }
@@ -368,9 +340,7 @@ main {
     // Individual Blog Pages
 
     article.blogpost-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      @include container();
 
       margin: 1rem;
 
@@ -378,21 +348,17 @@ main {
 
       time p.time-subheading {
         font-size: 1.2em;
-        margin-bottom: 1rem;
+        margin: 0;
         text-align: center;
+        font-style: italic;
       }
 
       figure.blogpost-photo {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        margin-bottom: 1rem;
+        @include container();
 
         img {
+          @include img();
           max-width: 50%;
-          height: auto;
-          border-radius: 0.5em;
         }
       }
 
@@ -406,7 +372,6 @@ main {
         @include card-bg();
         background-color: aquamarine;
         margin-bottom: 1.5rem;
-
         font-size: 2.5em;
         font-weight: bold;
         text-align: center;
@@ -421,17 +386,15 @@ main {
     // Contact
 
     .contact-container {
-      display: flex;
-      flex-direction: column;
+      @include flex-col();
+
       align-items: center;
       margin-top: 1rem;
 
       @include card-bg();
 
       .contact-subheading {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: flex-start;
+        @include flex-row();
 
         gap: 1em;
 
@@ -458,8 +421,7 @@ main {
       }
 
       .socials {
-        display: flex;
-        flex-flow: row wrap;
+        @include flex-row();
         justify-content: space-evenly;
         width: 100%;
 
@@ -472,8 +434,7 @@ main {
     // Projects
 
     section.project-cards {
-      display: flex;
-      flex-flow: row wrap;
+      @include flex-row();
       justify-content: center;
       gap: 2em;
       padding: 1em;
@@ -510,9 +471,7 @@ main {
         }
 
         a {
-          margin-bottom: 1rem;
           @include button();
-          padding: 0.5rem;
         }
       }
     }
@@ -527,8 +486,7 @@ footer {
 
   margin-top: auto;
   .container {
-    display: flex;
-    flex-flow: row wrap;
+    @include flex-row();
     justify-content: space-between;
 
     padding: 1rem;
