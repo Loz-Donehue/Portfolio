@@ -169,7 +169,8 @@ header {
     h1 {
       text-align: center;
       color: white;
-      font-size: 3.4rem;
+      font-size: clamp(2rem, 5vw, 3.5rem);
+
       -webkit-background-clip: text;
       background-clip: text;
       -webkit-text-fill-color: white;
