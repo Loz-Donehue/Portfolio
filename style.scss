@@ -207,7 +207,7 @@ main {
     // Home
 
     .home-container {
-      @include flex-row();
+      @include flex-col();
       justify-content: center;
       align-items: center;
 
@@ -219,6 +219,8 @@ main {
         flex: 1 1 48%;
 
         padding: 1rem;
+
+        text-align: center;
 
         .home-subheading {
           @include subheading();
@@ -274,7 +276,17 @@ main {
       max-width: 50%;
       .skills {
         img {
-          width: 4rem;
+          width: 4em;
+        }
+        @media only screen and (max-width: 768px) {
+          img {
+            width: 2em;
+          }
+        }
+        @media only screen and (max-width: 450px) {
+          img {
+            width: 1em;
+          }
         }
       }
     }
