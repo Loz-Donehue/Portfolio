@@ -276,7 +276,7 @@ main .container .skills-container {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 3rem;
+  gap: 1rem;
   background-color: bisque;
   padding: 1rem;
   border: 1px solid black;
@@ -293,12 +293,6 @@ main .container .skills-container .skills img {
 @media only screen and (max-width: 768px) {
   main .container .skills-container .skills img {
     width: 2em;
-  }
-}
-
-@media only screen and (max-width: 450px) {
-  main .container .skills-container .skills img {
-    width: 1em;
   }
 }
 
