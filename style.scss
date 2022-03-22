@@ -239,7 +239,7 @@ main {
     }
 
     // About
-    article.about {
+    .about {
       @include flex-col();
       align-items: center;
 

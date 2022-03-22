@@ -215,7 +215,7 @@ main .container .home-container .home-img img {
   border: none;
 }
 
-main .container article.about {
+main .container .about {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -229,7 +229,7 @@ main .container article.about {
   padding: 1rem;
 }
 
-main .container article.about article.about-text {
+main .container .about article.about-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -245,12 +245,12 @@ main .container article.about article.about-text {
           box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.2);
 }
 
-main .container article.about article.about-text p {
+main .container .about article.about-text p {
   margin-bottom: 1rem;
   font-size: 1rem;
 }
 
-main .container article.about article.about-text ul li {
+main .container .about article.about-text ul li {
   margin-bottom: 1rem;
 }
 
