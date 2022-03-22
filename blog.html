@@ -47,9 +47,13 @@
 
     <main>
       <div class="container">
+        <!-- I used the section element here, as the blog container is a main section of the page -->
         <section class="blog-container">
+          <!-- I used article here as the element as I felt it was more semantically correct (they are blog articles - both the text section and figure img forms the whole article), as each article is a blog card and it's more semantic than using divs. HTML validator throws a warning before there is no heading within it. -->
           <article class="blog-card">
+            <!-- used section as this is the text section of the blog card -->
             <section class="text-col">
+              <!-- Used h2 as the main heading of the page (h1) is Blog -->
               <h2>Career change: from conveyancer to coder</h2>
               <time datetime="2021-12-25">Written: 25 December 2021</time>
               <p>
@@ -63,7 +67,7 @@
               </p>
               <a href="blog1.html">Click here to read the full blog post</a>
             </section>
-
+            <!-- Figure contains the img section of the blog card -->
             <figure class="img-col">
               <img
                 src="/images/arrows.jpg"
