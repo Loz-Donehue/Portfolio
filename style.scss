@@ -360,7 +360,7 @@ main {
 
       @include card-bg();
 
-      time p.time-subheading {
+      time {
         @include time();
         margin: 0;
         text-align: center;
