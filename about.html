@@ -8,7 +8,7 @@
     <title>About</title>
   </head>
   <body>
-    <!-- Navigation Bar -->
+    <!-- Navigation Bar [COMPONENT - text/img]-->
     <nav class="navbar">
       <div class="container">
         <a href="index.html">
@@ -36,7 +36,7 @@
       </div>
     </nav>
 
-    <!-- Header -->
+    <!-- Header [COMPONENT - text]-->
     <header class="header">
       <div class="container">
         <h1>About</h1>
@@ -50,6 +50,7 @@
         <!-- Main container that will hold all of the about cards -->
         <div class="about">
           <!-- I used the article element as these are little articles written by me about myself -->
+          <!-- Card @mixin card-bg [COMPONENT - text/visual]-->
           <article class="about-text">
             <p>
               Welcome to my portfolio website! My name's Lauren, though some
@@ -75,9 +76,10 @@
           </article>
 
           <!-- Career section, subheading outside of the card -->
+          <!-- @mixin subheading [COMPONENT - text] -->
           <h2 class="about-subheading">Career</h2>
 
-          <!-- Career about text, in a card -->
+          <!-- Career about text, in a card @mixing card-bg [COMPONENT - text/visual] -->
           <article class="about-text">
             <p>
               My early career was a customer-facing one at one of my favourite
@@ -116,16 +118,18 @@
             </p>
 
             <!-- Link to download a copy of my resume -->
+            <!-- Button @mixin button [COMPONENT - text/visual]-->
             <a href="/images/Resume-Lauren.pdf" download class="download-btn"
               >Click to Download Resume
               <img src="images/download.png" alt="Download icon" />
             </a>
           </article>
 
-          <!-- Education section, heading outside of card -->
+          <!-- Education section, subheading outside of card @mixin subheading [COMPONENT - text] -->
+
           <h2 class="about-subheading">Education</h2>
 
-          <!-- Education section text in card -->
+          <!-- Education section text in card @misin card-bg [COMPONENT - text/visual] -->
           <article class="about-text">
             <p>
               My earliest memory of coding was when I was in high school. I'd
@@ -157,11 +161,11 @@
             </p>
           </article>
 
-          <!-- Skills I will learn section, heading outside of card -->
+          <!-- Skills I will learn section, subheading outside of card, @mixin subheading [COMPONENT - text] -->
 
           <h2 class="about-subheading">Skills I will learn</h2>
 
-          <!-- Card will skill icons  -->
+          <!-- Skill icons [COMPONENT - img/visual] -->
           <section class="skills-container">
             <div class="skills">
               <img src="/images/html.png" alt="HTML 5 logo" />

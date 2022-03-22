@@ -6,7 +6,7 @@
 
 // Mixins
 
-@mixin nav-button() {
+@mixin nav-button {
   background-color: black;
   color: white;
 
@@ -28,7 +28,7 @@
   }
 }
 
-@mixin currentpage() {
+@mixin currentpage {
   background-color: rgb(44, 5, 80);
   color: white;
 
@@ -49,7 +49,7 @@
     color: white;
   }
 }
-@mixin button() {
+@mixin button {
   background-color: aqua;
   color: black;
 
@@ -70,7 +70,7 @@
   }
 }
 
-@mixin container() {
+@mixin container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -80,24 +80,24 @@
   padding: 1rem;
 }
 
-@mixin img() {
+@mixin img {
   max-width: 100%;
   height: auto;
   border-radius: 1.5rem;
   border: 1px solid black;
 }
 
-@mixin flex-col() {
+@mixin flex-col {
   display: flex;
   flex-flow: column wrap;
 }
 
-@mixin flex-row() {
+@mixin flex-row {
   display: flex;
   flex-flow: row wrap;
 }
 
-@mixin card-bg() {
+@mixin card-bg {
   background-color: bisque;
   padding: 1rem;
   border: 1px solid black;
@@ -181,10 +181,10 @@ ul {
       flex-wrap: wrap;
       gap: 2em;
       li a.right-nav {
-        @include nav-button();
+        @include nav-button;
       }
       li a.current {
-        @include currentpage();
+        @include currentpage;
       }
     }
   }
@@ -232,7 +232,7 @@ main {
     // Home
 
     .home-container {
-      @include flex-col();
+      @include flex-col;
       justify-content: center;
       align-items: center;
 
@@ -240,7 +240,7 @@ main {
       min-height: 50vh;
 
       .home-text {
-        @include container();
+        @include container;
         flex: 1 1 48%;
 
         padding: 1rem;
@@ -248,16 +248,16 @@ main {
         text-align: center;
 
         .home-subheading {
-          @include subheading();
+          @include subheading;
           padding: 0;
         }
       }
       .home-img {
-        @include container();
+        @include container;
 
         flex: 1 1 50%;
         img {
-          @include img();
+          @include img;
           border: none;
         }
       }
@@ -265,18 +265,18 @@ main {
 
     // About
     .about {
-      @include flex-col();
+      @include flex-col;
       align-items: center;
 
       // added padding so that text didn't go edge to edge on smaller screen sizes
       padding: 1rem;
 
       article.about-text {
-        @include flex-col();
-        @include card-bg();
+        @include flex-col;
+        @include card-bg;
 
         p {
-          @include p();
+          @include p;
         }
 
         ul li {
@@ -286,17 +286,17 @@ main {
     }
 
     h2.about-subheading {
-      @include subheading();
+      @include subheading;
     }
 
     // Skills I will learn section of About page
 
     .skills-container {
-      @include flex-row();
+      @include flex-row;
       justify-content: center;
       gap: 1rem;
 
-      @include card-bg();
+      @include card-bg;
 
       max-width: 50%;
       .skills {
@@ -314,9 +314,9 @@ main {
     // Download Resume Button
 
     .download-btn {
-      @include button();
+      @include button;
 
-      @include container();
+      @include container;
 
       align-self: center;
       padding: 0.5em;
@@ -329,17 +329,17 @@ main {
 
     // Blog
     section.blog-container {
-      @include container();
+      @include container;
 
       article.blog-card {
-        @include card-bg();
+        @include card-bg;
 
-        @include container();
+        @include container;
 
         .text-col {
           flex: 1 1 60%;
 
-          @include flex-col();
+          @include flex-col;
 
           h2 {
             margin-bottom: 1rem;
@@ -352,10 +352,10 @@ main {
           }
 
           p {
-            @include p();
+            @include p;
           }
           a {
-            @include button();
+            @include button;
 
             align-self: center;
           }
@@ -363,12 +363,12 @@ main {
         .img-col {
           flex: 1 1 38%;
 
-          @include container();
+          @include container;
           gap: 0;
           padding: 0;
 
           img {
-            @include img();
+            @include img;
 
             max-height: 20em;
           }
@@ -379,36 +379,36 @@ main {
     // Individual Blog Pages
 
     article.blogpost-container {
-      @include container();
+      @include container;
 
       margin: 1rem;
 
-      @include card-bg();
+      @include card-bg;
 
       time {
-        @include time();
+        @include time;
         margin: 0;
         text-align: center;
         max-width: 100%;
       }
 
       figure.blogpost-photo {
-        @include container();
+        @include container;
 
         img {
-          @include img();
+          @include img;
           max-width: 50%;
         }
       }
 
       p {
-        @include p();
+        @include p;
 
         max-width: 90%;
         text-align: justify;
       }
       aside {
-        @include card-bg();
+        @include card-bg;
         background-color: aquamarine;
         margin-bottom: 1.5rem;
         font-size: 2.2rem;
@@ -418,22 +418,22 @@ main {
         max-width: 90%;
       }
       a {
-        @include button();
+        @include button;
       }
     }
 
     // Contact
 
     .contact-container {
-      @include flex-col();
+      @include flex-col;
 
       align-items: center;
       margin-top: 1rem;
 
-      @include card-bg();
+      @include card-bg;
 
       .contact-subheading {
-        @include flex-row();
+        @include flex-row;
 
         gap: 1em;
 
@@ -455,12 +455,12 @@ main {
       }
 
       a {
-        @include button();
+        @include button;
         margin: 1em 0;
       }
 
       .socials {
-        @include flex-row();
+        @include flex-row;
         justify-content: space-evenly;
         width: 100%;
 
@@ -473,13 +473,13 @@ main {
     // Projects
 
     section.project-cards {
-      @include flex-row();
+      @include flex-row;
       justify-content: center;
       gap: 2em;
       padding: 1em;
 
       .card {
-        @include card-bg();
+        @include card-bg;
 
         width: 15em;
         height: 30em;
@@ -510,7 +510,7 @@ main {
         }
 
         a {
-          @include button();
+          @include button;
         }
       }
     }
@@ -525,7 +525,7 @@ footer {
 
   margin-top: auto;
   .container {
-    @include flex-row();
+    @include flex-row;
     justify-content: space-between;
 
     padding: 1rem;
