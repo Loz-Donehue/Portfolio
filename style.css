@@ -387,7 +387,7 @@ main .container section.blog-container article.blog-card .text-col {
           flex-flow: column wrap;
 }
 
-main .container section.blog-container article.blog-card .text-col h1 {
+main .container section.blog-container article.blog-card .text-col h2 {
   margin-bottom: 1rem;
   font-size: 1.5em;
 }
