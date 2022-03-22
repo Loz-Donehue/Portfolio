@@ -392,7 +392,7 @@ main .container section.blog-container article.blog-card .text-col h1 {
   font-size: 1.5em;
 }
 
-main .container section.blog-container article.blog-card .text-col time p {
+main .container section.blog-container article.blog-card .text-col time {
   margin-bottom: 1rem;
   font-style: italic;
 }
