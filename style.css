@@ -691,11 +691,11 @@ main .container section.project-cards .card .project-img {
 }
 
 main .container section.project-cards .card .project-img .img1 {
-  background: center/cover url("/images/terminal.jpg");
+  background: center/cover url("./images/terminal.jpg");
 }
 
 main .container section.project-cards .card .project-img .img2 {
-  background: center/cover url("/images/bitcoin.jpg");
+  background: center/cover url("./images/bitcoin.jpg");
 }
 
 main .container section.project-cards .card h1 {

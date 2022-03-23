@@ -491,11 +491,11 @@ main {
           background-color: aqua;
 
           .img1 {
-            background: center/cover url("/images/terminal.jpg");
+            background: center/cover url("./images/terminal.jpg");
           }
 
           .img2 {
-            background: center/cover url("/images/bitcoin.jpg");
+            background: center/cover url("./images/bitcoin.jpg");
           }
         }
 
